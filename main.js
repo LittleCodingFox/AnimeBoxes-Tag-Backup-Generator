@@ -37,6 +37,11 @@ function Process(event) {
     return;
   }
 
+  // Create field if it doesnt exist
+  if (!backupJson.bannedTags) {
+    backupJson.bannedTags = [];
+  }
+
   // Push object with the banned tags to json backup data
   tags.forEach((tag, index) => {
     backupJson.bannedTags.push({
