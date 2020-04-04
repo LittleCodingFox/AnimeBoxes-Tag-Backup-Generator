@@ -4,6 +4,9 @@
  * Processes input data
  */
 function Process(event) {
+  // Prevent form base functionality
+  event.preventDefault();
+
   // Get elements
   const originalEl = document.getElementById('original');
   const tagsEl = document.getElementById('tags');
@@ -53,9 +56,6 @@ function Process(event) {
 
   // Populate result text box
   resultEl.value = JSON.stringify(backupJson, null, 2);
-
-  // Prevent form base functionality
-  event.preventDefault();
 }
 
 // Create form event listener for submit
