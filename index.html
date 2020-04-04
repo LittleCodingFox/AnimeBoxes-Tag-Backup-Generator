@@ -10,28 +10,56 @@
 
   <!-- Body -->
   <body>
-	  <div class="container">
-		<h1>Anime Boxes Tag Filler</h1>
-		<form action="#" method="GET">
-		<div class="form-group">
-			<label for="original">Backup Data (edit to your liking):</label>
-			<textarea class="form-control" id="original" rows="5">{"backupTime":"2020-04-03T21:21:02+0100","backupVersion":"1.0","bannedTags":[],"creatorName":"Anime boxes (Android)","creatorVersion":"1.5.3","favorites":[],"searchHistory":[],"servers":[]}</textarea>
-		</div>
-		<div class="form-group">
-			<label for="tags">Tags (one entry per line, can have multiple in a single line):</label>
-			<textarea class="form-control" id="tags" rows="5"></textarea>
-		</div>
-		<div class="form-group">
-			<label for="result">Result:</label>
-			<textarea class="form-control" id="result" rows="5"></textarea>
-		</div>
-		
-		<div class="text-center">
-			<button type="submit" class="btn btn-primary mb-2" onclick="Process()">Process</button>
-		</div>
-		</form>
-	</div>
+    <div class="container">
+      <h1>Anime Boxes Tag Filler</h1>
+      <form id="form">
+        <!-- Data to modify from a backup -->
+        <div>
+          <label for="original">
+            Backup Data
+            <small>
+              (edit to your liking)
+            </small>
+          </label>
 
+          <br />
+
+          <textarea id="original" rows="10">
+{"backupTime":"2020-04-03T21:21:02+0100","backupVersion":"1.0","bannedTags":[],"creatorName":"Anime boxes (Android)","creatorVersion":"1.5.3","favorites":[],"searchHistory":[],"servers":[]}</textarea
+          >
+        </div>
+
+        <!-- Tag input -->
+        <div>
+          <label for="tags">
+            Tags
+            <small>
+              (one entry per line, can have multiple in a single line)
+            </small>
+          </label>
+
+          <br />
+
+          <textarea id="tags" rows="10"></textarea>
+        </div>
+
+        <!-- Result, read only -->
+        <div>
+          <label for="result">Result:</label>
+
+          <br />
+
+          <textarea id="result" rows="10" readonly></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div>
+          <button type="submit">
+            Process
+          </button>
+        </div>
+      </form>
+    </div>
 
   </body>
 </html>
