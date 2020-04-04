@@ -32,44 +32,6 @@
 		</form>
 	</div>
 
-	<script type="text/javascript">
-	function Process() {
-	
-		var json = {}
-		
-		try {
-		
-			json = JSON.parse($("#original").val());
 
-		} catch(e) {
-		
-			$("#result").val("Failed to load the backup data");
-			
-			return;
-		}
-		
-		var tags = $("#tags").val().split("\n");
-		
-		var newTags = [];
-		
-		for(var i = 0; i < tags.length; i++)
-		{
-			if(tags[i].length == 0) {
-			
-				continue;
-			}
-			
-			newTags[newTags.length] = {
-				"bannedTagid": 0,
-				"tagText": tags[i],
-				"mId": i + 1
-			};
-		}
-		
-		json.bannedTags = newTags;
-		
-		$("#result").val(JSON.stringify(json, null, 2));
-	}
-	</script>
   </body>
 </html>
