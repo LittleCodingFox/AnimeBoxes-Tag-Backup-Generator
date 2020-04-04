@@ -55,7 +55,7 @@ function Process(event) {
   });
 
   // Populate result text box
-  resultEl.value = JSON.stringify(backupJson, null, 2);
+  resultEl.value = JSON.stringify(backupJson, null, 4);
 }
 
 // Create form event listener for submit
