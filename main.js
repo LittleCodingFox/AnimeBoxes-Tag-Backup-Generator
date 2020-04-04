@@ -14,7 +14,7 @@ function Process(event) {
 
   // Parse data
   try {
-    console.log(originalEl.value);
+    // console.log(originalEl.value);
 
     backupJson = JSON.parse(originalEl.value);
   } catch (e) {
@@ -28,7 +28,7 @@ function Process(event) {
   // Create tags array by separating newlines
   const tags = tagsEl.value.trim().split('\n');
 
-  console.log(tags);
+  // console.log(tags);
 
   // Empty check
   if (!tags.length || tags[0] === '') {
