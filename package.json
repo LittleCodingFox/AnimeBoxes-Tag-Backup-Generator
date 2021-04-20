@@ -5,15 +5,15 @@
   "main": "src/index.html",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VoidlessSeven7/AnimeBoxes-Tag-Backup-Generator.git"
+    "url": "git+https://github.com/LittleCodingFox/AnimeBoxes-Tag-Backup-Generator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "LittleCodingFox and VoidlessSeven7",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VoidlessSeven7/AnimeBoxes-Tag-Backup-Generator/issues"
+    "url": "https://github.com/LittleCodingFox/AnimeBoxes-Tag-Backup-Generator/issues"
   },
-  "homepage": "https://github.com/VoidlessSeven7/AnimeBoxes-Tag-Backup-Generator#readme",
+  "homepage": "https://github.com/LittleCodingFox/AnimeBoxes-Tag-Backup-Generator#readme",
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
